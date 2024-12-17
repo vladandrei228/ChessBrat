@@ -59,11 +59,11 @@ def categorize_and_save_games(file_path, batch_size=10000):
 def save_games(categorized_games):
     os.makedirs('Data', exist_ok=True)
     for elo_range, games in categorized_games.items():
-        file_name = f'Data/chess_games_{elo_range}.pgn'
+        file_name = f'DataFrames/chess_games_{elo_range}.pgn'
         with open(file_name, 'a') as file:
             for game in games:
                 file.write(game + '\n\n')
 
 # Example usage
-file_path = 'lichess_db_standard_rated_2024-09.pgn'
+file_path = 'lichess_db_standard_rated_2024-08.pgn'
 categorize_and_save_games(file_path)

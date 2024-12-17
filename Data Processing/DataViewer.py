@@ -18,5 +18,5 @@ def read_one_chunk(file_path, chunk_size=1024):
 
 chunk_size = 10 * 1024 * 1024  # 10 MB
 # Read and print one chunk
-chunk = read_one_chunk('lichess_db_standard_rated_2024-09.pgn', chunk_size)
+chunk = read_one_chunk('lichess_db_standard_rated_2024-08.pgn', chunk_size)
 print(chunk)
